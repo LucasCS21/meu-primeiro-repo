@@ -4,6 +4,7 @@ tasks = []
 
 while True:
     choice = int(input("Digite uma opção (0 a 3): "))
+
     if choice == 0:
         break
 
@@ -12,8 +13,10 @@ while True:
         tasks.append(new_task)
 
     elif choice == 2:
-        task = input("Digite uma tarefa para ser removida: ")
-        tasks.remove(task)
+        for i in range(len(tasks)):
+            print(f"{i} - {tasks[i]}")
+        task = int(input("Digite uma tarefa para ser removida: "))
+        tasks.pop(task)
 
     elif choice == 3:
         for task in tasks:
@@ -21,7 +24,6 @@ while True:
 
 # TODO:
 # Add colors for different priorities;
-# Switch choice 2 to an indexed version;
 # Create a menu;
 # Create functions for each choice;
 # Fix errors with try-except;
