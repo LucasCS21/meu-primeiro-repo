@@ -2,7 +2,17 @@ print("Olá! Este é meu primeiro projeto em Python!")
 
 tasks = []
 
+def menu():
+    print("=" * 20)
+    print("====    MENU    ====")
+    print("=" * 20)
+    print("\n[0] Sair do programa")
+    print("[1] Adicionar tarefa")
+    print("[2] Remover tarefa")
+    print("[3] Listar tarefas\n")
+
 while True:
+    menu()
     choice = int(input("Digite uma opção (0 a 3): "))
 
     if choice == 0:
@@ -24,6 +34,5 @@ while True:
 
 # TODO:
 # Add colors for different priorities;
-# Create a menu;
 # Create functions for each choice;
 # Fix errors with try-except;
