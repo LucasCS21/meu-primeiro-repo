@@ -9,7 +9,8 @@ def menu():
     print("\n[0] Sair do programa")
     print("[1] Adicionar tarefa")
     print("[2] Remover tarefa")
-    print("[3] Listar tarefas\n")
+    print("[3] Listar tarefas")
+    print("[4] Limpar lista de tarefas\n")
 
 while True:
     menu()
@@ -31,6 +32,9 @@ while True:
     elif choice == 3:
         for task in tasks:
             print(task)
+
+    elif choice == 4:
+        tasks.clear()
 
 # TODO:
 # Add colors for different priorities;
